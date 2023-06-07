@@ -63,10 +63,10 @@ footer {
 
 /*Slick*/
 .slick-slide > div {
-  margin: 0 5px;
+  margin: 0 10px;
 }
 .slick-list {
-  margin: 0 -5px;
+  margin: 0 -10px;
 }
 
 .slick-prev:before,
