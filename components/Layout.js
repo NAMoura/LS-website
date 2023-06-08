@@ -1,15 +1,20 @@
 import Link from 'next/link';
+import Navbar from './Navbar';
 
 export default function Layout({ children }) {
   return (
+    
+    
     <div className="layout">
-      <header>
+      <Navbar />
+      
+      <header>  
         <Link href="/" >   
             <h1>
               <span>LS</span>
-              <span>PROJECTS</span>
+              <span>Architecture</span>
             </h1>
-            <h2>Spread The Joy</h2>      
+            <h2>solutions made for you</h2>      
         </Link>
       </header>
 

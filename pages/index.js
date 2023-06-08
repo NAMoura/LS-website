@@ -33,7 +33,7 @@ export default function Projects( {projects} ) {
       initialSlide: 0,
       responsive: [
         {
-          breakpoint: 1024,
+          breakpoint: 960,
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,

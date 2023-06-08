@@ -2,7 +2,6 @@
 
 body {
   background: #fff;
-  margin: 0;
   font-family: 'Roboto';
   font-size: 1.5em;  
 }
@@ -45,7 +44,8 @@ footer {
   color: #ebeaea;
   padding: 40px;
   text-align: center;
-  margin-top: auto
+  margin-top: auto;
+  
 }
 .page-content {
   max-width: 1200px;
@@ -72,4 +72,14 @@ footer {
 .slick-prev:before,
 .slick-next:before {
   color: rgb(0, 0, 0)!important;
+}
+
+
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
 }
