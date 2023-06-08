@@ -1,7 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import Link from 'next/link';
 import '@fortawesome/fontawesome-free/css/all.css';
-import {Button} from './Button';
+
 
 
 
@@ -51,13 +51,13 @@ useEffect(() => {
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <Link href="/projects" className='nav-links' onClick={closeMobileMenu}>Projects</Link>
+                        <Link href="/projects/" className='nav-links' onClick={closeMobileMenu}>PROJECTS</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link href="/about" className='nav-links' onClick={closeMobileMenu}>About</Link>
+                        <Link href="/about/" className='nav-links' onClick={closeMobileMenu}>ABOUT</Link>
                     </li>
-                    <li className='nav-item'>
-                        <Link href="/constacts" className='nav-links' onClick={closeMobileMenu}>Contats</Link>
+                    <li className='nav-item last-item'>
+                        <Link href="/contacts/" className='nav-links' onClick={closeMobileMenu}>CONTACTS</Link>
                     </li>
                 </ul>
             </div>
