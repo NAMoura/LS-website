@@ -37,7 +37,7 @@ export default function Projects( {projects} ) {
           settings: {
             slidesToShow: 2,
             slidesToScroll: 2,
-            infinite: true,
+            //infinite: true,
             dots: true
           }
         },
