@@ -1,4 +1,7 @@
 import Navbar from './Navbar';
+import Footer from './Footer';
+import HeroSection from './HeroSection';
+
 
 export default function Layout({ children }) {
   return (
@@ -8,16 +11,14 @@ export default function Layout({ children }) {
       <Navbar />
       
       <header>  
-        
+      
       </header>
 
       <div className="page-content">
         {children}
       </div>
 
-      <footer>
-        <p>Copyright 2021 Luis Santos</p>
-      </footer>
+      <Footer />
     </div>
   );
 }

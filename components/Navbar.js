@@ -44,7 +44,7 @@ useEffect(() => {
         <nav className='navbar'>
             <div className='navbar-container'>
                 <Link href="/" className="navbar-logo">
-                    LOGO
+                    LS
                 </Link>
                 <div className='menu-icon' onClick={handleClick}>
                     <i className={click ? 'fas fa-times' : 'fas fa-bars'}></i>

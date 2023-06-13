@@ -3,6 +3,7 @@ import ProjectCard from "../components/ProjectCard";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import HeroSection from "../components/HeroSection";
 
 
 export async function getStaticProps() {
@@ -21,6 +22,9 @@ export async function getStaticProps() {
   }
 
 }
+
+
+
 
 export default function Projects( {projects} ) {
   
@@ -59,16 +63,28 @@ export default function Projects( {projects} ) {
       ]
     };
 
+    
 
 
   console.log(projects);
   return (
-    <div className="project-list">
-     <Slider {...settings}>
-      {projects.map(project => (
-        <ProjectCard key={project.sys.id} project={project}/> 
-      ))}
-      </Slider>
+    <div>
+      <div className="">
+        <HeroSection />
+      </div>
+      <div className="project-list">
+        <Slider {...settings}>
+          {projects.map((project) => (
+            <ProjectCard key={project.sys.id} project={project} />
+          ))}
+        </Slider>
+      </div>
+      <div>
+        about
+      </div>
     </div>
-  )
+  );
+
+  
 }
+

@@ -1,4 +1,5 @@
 import { createClient } from "contentful";
+import { documentToReactComponents } from "@contentful/rich-text-react-renderer";
 import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -141,6 +142,10 @@ export default function projectDetails({ project }) {
             </tbody>
           </table>
         </div>
+      </div>
+
+      <div className="description">
+        {documentToReactComponents(description)}
       </div>
 
       <div className="gallery">
