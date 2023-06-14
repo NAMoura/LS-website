@@ -93,7 +93,7 @@ export default function Projects( {projects} ) {
         <div className="about-text">
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo massa, tempus id eros in, auctor molestie metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed nec dolor vitae sapien molestie condimentum luctus nec felis. Aliquam tellus elit, scelerisque a tortor ut, tristique euismod elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ultricies purus ut nisl dignissim tristique pulvinar vehicula tellus. Duis imperdiet metus purus, in maximus purus interdum ac. Nulla eget orci faucibus lectus convallis mollis et non elit.</p> <br></br>
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo massa</p> <br></br>
-        <p><div className="about-more">MORE ABOUT US <sup>_________</sup></div></p>
+        <p className="about-more">MORE ABOUT US <sup>_________</sup></p>
 
         </div>
         <div className="about-image"></div>
