@@ -102,50 +102,52 @@ export default function projectDetails({ project }) {
           <table>
             <tbody>
               <tr>
-                <td className="banner-title" colspan="2" width="70%">
+                <td className="banner-title" colSpan="2" width="70%">
                   {title}
                 </td>
                 <td></td>
               </tr>
 
               {location && (
-              <tr>
-                <td width="250px">Location</td>
-                <td>{location}</td>
-                <td></td>
-              </tr>
+                <tr>
+                  <td width="250px">Location</td>
+                  <td>{location}</td>
+                  <td></td>
+                </tr>
               )}
 
               {photography && (
-              <tr>
-                <td>Photography</td>
-                <td>{photography}</td>
-                <td></td>
-              </tr>
+                <tr>
+                  <td>Photography</td>
+                  <td>{photography}</td>
+                  <td></td>
+                </tr>
               )}
 
               {dProducers && (
-              <tr>
-                <td>3D Producer</td>
-                <td>{dProducers}</td>
-                <td></td>
-              </tr>
+                <tr>
+                  <td>3D Producer</td>
+                  <td>{dProducers}</td>
+                  <td></td>
+                </tr>
               )}
 
               {builders && (
-              <tr>
-                <td>Builder</td>
-                <td>{builders}</td>
-                <td></td>
-              </tr>
+                <tr>
+                  <td>Builder</td>
+                  <td>{builders}</td>
+                  <td></td>
+                </tr>
               )}
             </tbody>
           </table>
         </div>
       </div>
-
-      <div className="description">
-        {documentToReactComponents(description)}
+      <div className="description-container">
+        <div className="description-title">DESCRIPTION</div>
+        <div className="description">
+          {documentToReactComponents(description)}
+        </div>
       </div>
 
       <div className="gallery">

@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import HeroSection from "../components/HeroSection";
 
 
+
 export async function getStaticProps() {
 
   const client = createClient({
@@ -22,6 +23,8 @@ export async function getStaticProps() {
   }
 
 }
+
+
 
 
 
@@ -69,7 +72,7 @@ export default function Projects( {projects} ) {
   console.log(projects);
   return (
     <div>
-      <div className="">
+      <div>
         <HeroSection />
       </div>
       <div className="project-list">
@@ -79,8 +82,22 @@ export default function Projects( {projects} ) {
           ))}
         </Slider>
       </div>
-      <div>
-        about
+      <div className="sentence-container">
+        <div className="sentence-background">
+          <div className="sentence">Inspired by our natural environment and responding to all levels of human needs, Luís has over 5 years of experience in the delivery of high-quality architecture.</div>
+        </div>
+      </div>
+      <div className="about">
+      <div className="about-container">
+        <div className="about-title">ABOUT</div>
+        <div className="about-text">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo massa, tempus id eros in, auctor molestie metus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed nec dolor vitae sapien molestie condimentum luctus nec felis. Aliquam tellus elit, scelerisque a tortor ut, tristique euismod elit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed ultricies purus ut nisl dignissim tristique pulvinar vehicula tellus. Duis imperdiet metus purus, in maximus purus interdum ac. Nulla eget orci faucibus lectus convallis mollis et non elit.</p> <br></br>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed leo massa</p> <br></br>
+        <p><div className="about-more">MORE ABOUT US <sup>_________</sup></div></p>
+
+        </div>
+        <div className="about-image"></div>
+      </div>
       </div>
     </div>
   );
