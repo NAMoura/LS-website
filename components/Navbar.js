@@ -7,7 +7,7 @@ import '@fortawesome/fontawesome-free/css/all.css';
 
 function Navbar() {
 const [click, setClick] = useState(false);
-
+const [button, setButton] = useState(true);
 
 const handleClick = () => setClick(!click);
 const closeMobileMenu = () => setClick(false);
