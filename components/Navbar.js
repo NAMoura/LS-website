@@ -51,13 +51,13 @@ useEffect(() => {
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <Link href="/projects/" className='nav-links' onClick={closeMobileMenu}>PROJECTS</Link>
+                        <Link href="/projects_page" className='nav-links' onClick={closeMobileMenu}>PROJECTS</Link>
                     </li>
                     <li className='nav-item'>
-                        <Link href="/about/" className='nav-links' onClick={closeMobileMenu}>ABOUT</Link>
+                        <Link href="/about_page" className='nav-links' onClick={closeMobileMenu}>ABOUT</Link>
                     </li>
                     <li className='nav-item last-item'>
-                        <Link href="/contacts/" className='nav-links' onClick={closeMobileMenu}>CONTACTS</Link>
+                        <Link href="/contacts_page" className='nav-links' onClick={closeMobileMenu}>CONTACTS</Link>
                     </li>
                 </ul>
             </div>

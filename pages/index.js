@@ -25,10 +25,6 @@ export async function getStaticProps() {
 }
 
 
-
-
-
-
 export default function Projects( {projects} ) {
   
   const settings = {
@@ -66,10 +62,9 @@ export default function Projects( {projects} ) {
       ]
     };
 
-    
+  
+//  console.log(projects);
 
-
-  console.log(projects);
   return (
     <div>
       <div>
