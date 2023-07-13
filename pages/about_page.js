@@ -1,10 +1,9 @@
-import Image from "next/image";
 
 export default function AboutPage() {
   return (
     <div className="about-page-container">
       <div className="about-header">
-        <div className="about-title">ABOUT</div>
+        <div className="about-page-title">ABOUT</div>
         <div className="about-sentence">
           Inspired by our natural environment and responding to all levels of
           human needs, Luís has over 5 years of experience in the delivery of

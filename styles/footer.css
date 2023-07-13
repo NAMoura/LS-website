@@ -77,5 +77,9 @@
         grid-row-gap: 50px;
     }
 
+    .name {
+        width: 100%;
+    }
+
 }
 

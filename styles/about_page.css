@@ -3,7 +3,7 @@
     margin-top: -280px;
 }
 
-.about-title {
+.about-page-title {
     font-size: 1rem;
     width: 90%;
     margin: auto;
@@ -103,9 +103,9 @@
         
       }
     
-      .about-title {
+      .about-page-title {
         margin-bottom: 5px;
-        margin-left: -2%;
+        margin-left: 3%;
         font-size: 0.9rem;
       }
     

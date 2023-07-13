@@ -5,7 +5,7 @@ function Footer() {
         <div className="footer-container">
             <div className="name">
                 LUÍS SANTOS
-                <div className="small">© Luís Santos.<br></br> Website by Nuno Moura</div>
+                <div className="small">© Luís Santos.<br/> Website by Nuno Moura</div>
             </div>
             <div className="links">
                 <div className="title">
