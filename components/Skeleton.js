@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Skeleton () {
     return (
         <div className="banner-container">
