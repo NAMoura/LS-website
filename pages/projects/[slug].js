@@ -4,6 +4,7 @@ import Image from "next/image";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Skeleton from "../../components/Skeleton";
 
 const client = createClient({
   space: process.env.CONTENTFUL_SPACE_ID,
@@ -23,7 +24,7 @@ export const getStaticPaths = async () => {
 
   return {
     paths: paths,
-    fallback: false,
+    fallback: true
   };
 };
 
@@ -35,11 +36,14 @@ export async function getStaticProps({ params }) {
 
   return {
     props: { project: items[0] },
-    //revalidate: 10
+    revalidate: 10
   };
 }
 
 export default function projectDetails({ project }) {
+
+  if(!project) return <Skeleton />
+
   console.log(project);
   const {
     featureImage,
